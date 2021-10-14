@@ -53,7 +53,9 @@ public class C02_IFrameHandle {
         // iframe ler de id yerine index yazmis olsaydik daha hizli sonuc alirdik.
         //driver.switchTo().frame(0);
         // locate ederek yapmak istedigimiz de iframe i locate ederiz ardından frame(Webelement) yazariz.
+        
         driver.switchTo().frame("mce_0_ifr");
+        // once i frame i handle etmek gerekir. ardından iframe icinden islem yapmak gerekir. NoSuchElement excepetion aliriz.
         WebElement textBox = driver.findElement(By.xpath("//*[@id='tinymce']"));
         // **** bu webelementinden emindik fakat NoSuchElementException aldık. bu iframe olduguna isaret olabilir.
         textBox.click();

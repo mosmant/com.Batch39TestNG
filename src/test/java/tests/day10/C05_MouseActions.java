@@ -34,7 +34,7 @@ public class C05_MouseActions extends TestBase {
 
 
         //4- Acilan sayfada “Your Lists” yazisi oldugunu test edelim
-        String actualText =  driver.findElement(By.xpath("//li[@class='a-tab-heading a-active a-size-large']")).getText()
+        String actualText =  driver.findElement(By.xpath("//li[@class='a-tab-heading a-active a-size-large']")).getText();
         String expectedDroppedYazisi="Dropped!";
         Assert.assertEquals(actualText,expectedDroppedYazisi,"Missmatch Text");
     }

@@ -59,7 +59,7 @@ public class C01_WindowHandle extends TestBase {
                 ikinciWindowhandle=each;
             }
         }
-
+        // String secondPageHandle = windowHandles.stream().filter(t-> !t.equals(firstPageHandle)).findFirst().get();
         // bu satira geldigimizde elimizde 2.sayfain handle degeri var olacak
         System.out.println("ikinci sayfa handle degeri : " + ikinciWindowhandle);
 
